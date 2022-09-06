@@ -10,7 +10,10 @@ public class PalManager {
         palindromes.add(palindrome);
     }
 
-    public ArrayList<String> returnList() {
-        return palindromes;
+    public String printList() {
+        for (int i = 0; i < palindromes.size(); i++) {
+            System.out.println(palindromes.get(i));
+        }
+        return "Total amount of palindromes: " + palindromes.size();
     }
 }
